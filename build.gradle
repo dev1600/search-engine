@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+dependencies {
+    implementation 'com.google.guava:guava:33.7.1-jre'
+
+}
